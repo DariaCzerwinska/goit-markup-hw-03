@@ -1,6 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  width: 1600px;
+}
+ul {
+  list-style-type: none;
 }
 .navigation-1 {
   font-weight: 500;
@@ -8,6 +12,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: #212121;
 }
 .navigation-2 {
   font-weight: 500;
@@ -55,6 +60,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
+  box-sizing: border-box;
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
 }
 .portfolio-buttons:hover {
   background: #2196f3;
@@ -111,14 +120,6 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-
-.div-footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-  background: #2f303a;
-}
 .mail-header {
   font-family: "Roboto";
   font-style: normal;
@@ -128,6 +129,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  margin-right: 50px;
 }
 .mail-header:hover {
   color: #2196f3;
@@ -138,11 +140,10 @@ body {
   text-decoration: none;
 }
 .first-page {
+  background: #2f303a;
   width: 1600px;
   height: 600px;
-  left: 0px;
-  top: 80px;
-  background: #2f303a;
+  margin-top: -37px;
 }
 h1 {
   font-weight: 900;
@@ -174,6 +175,8 @@ h1 {
   margin-left: 700px;
   margin-top: 30px;
   cursor: pointer;
+  border-radius: 4px;
+  border-width: 0px;
 }
 h2 {
   font-weight: 700;
@@ -181,6 +184,9 @@ h2 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 .first-list {
   font-weight: 700;
@@ -201,11 +207,88 @@ h2 {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+.our-team-list {
+  box-sizing: border-box;
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team-p {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.container-header {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-portfolio {
+  padding-top: 94px;
+}
+.class-header {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  margin-left: -290px;
+}
+.nav-list:not(:last-child) {
+  margin-right: 46px;
+}
+.contact-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact {
+  justify-content: flex-end;
+}
+.lorem {
+  display: flex;
+  padding-top: 94px;
+}
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+.our-team {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team-box {
+  width: 1600px;
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+.image {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.image > h3 {
+  text-align: center;
+}
+.image > p {
+  text-align: center;
 }
 .mail-main-footer {
   font-weight: 500;
@@ -249,4 +332,67 @@ h2 {
 }
 .phone:focus {
   color: #2196f3;
+}
+.section-footer {
+  width: 1600px;
+  background: #2f303a;
+}
+.footer-items {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 215px;
+  padding-top: 60px;
+}
+.footer-mail {
+  padding-left: 215px;
+  padding-bottom: 80px;
+  line-height: 1.71;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 572px;
+  padding-left: 510px;
+  padding-right: 518px;
+}
+.menu-list:not(:last-child) {
+  margin-right: 8px;
+}
+.gallery-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 215px;
+  padding-top: 50px;
+}
+.gallery-list {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.image-portfolio {
+  width: 370px;
+  height: 404px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.image-portfolio > h3 {
+  padding-left: 24px;
+}
+.image-portfolio > p {
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.footer {
+  padding-top: 9px;
+}
+.logo {
+  padding-top: 24px;
 }

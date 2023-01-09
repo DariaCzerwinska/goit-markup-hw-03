@@ -1,0 +1,103 @@
+<header
+  class="page-header"
+  > <div
+  class="container header-flex"
+  > <div
+  class="header-nav"
+  > <a
+  href="index.html"
+  class="logo"
+  > <span
+  class="logo-color"
+  > Web</span
+  > Studio</a
+  > <nav
+  class="header-nav"
+  > <ul
+  class="menu"
+  > <li
+  > <a
+  href=""
+  class="menu-item menu-item-active"
+  > Agencja</a
+  > </li
+  > <li
+  > <a
+  href="portfolio.html"
+  class="menu-item"
+  > Portfolio</a
+  > </li
+  > <li
+  > <a
+  href=""
+  class="menu-item"
+  > Kontakt</a
+  > </li
+  > </ul
+  > </nav
+  > </div
+  > <ul
+  class="menu"
+  > <li
+  > <a
+  href="mailto:info@devstudio.com"
+  class="menu-contact"
+  > info@devstudio.com</a
+  > </li
+  > <li
+  > <a
+  href="tel:+48111111111"
+  class="menu-contact menu-contact-space">+48
+  111
+  111
+  111</a
+  > </li
+  > </ul
+  > </div
+  > </header
+  > .page-header {
+  border-bottom: 1px solid var(--header-border-gray);
+}
+.page-header,
+.page-main {
+  background-color: var(--bg-color-white);
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.menu-item {
+  text-decoration: none;
+  color: var(--text-color-dark);
+  padding: 23px;
+}
+.menu-item-active {
+  color: var(--active-color);
+  text-decoration: none;
+}
+.menu-contact {
+  text-decoration: none;
+  color: var(--links-color-header);
+}
+.menu-contact-space {
+  margin-left: 50px;
+}
+.menu-item:hover,
+.menu-item:focus,
+.menu-contact:hover,
+.menu-contact:focus {
+  color: var(--active-color);
+}
